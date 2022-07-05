@@ -1,11 +1,14 @@
 {
   "name": "calendar-app",
   "version": "0.1.0",
+  "homepage": "https://coolcrazyfox.github.io/calendar-app/",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "lint": "eslint */**.{tsx,ts}",
-    "lint:fix": "eslint */**.{tsx,ts} --fix"
+    "lint:fix": "eslint */**.{tsx,ts} --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/node": "^16.7.13",
@@ -13,6 +16,7 @@
     "@types/react-dom": "^18.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "react": "^18.1.0",
+    "gh-pages": "^3.2.3",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2"
